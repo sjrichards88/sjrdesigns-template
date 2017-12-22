@@ -1,0 +1,16 @@
+.header {
+    position: fixed;
+    &__logo {
+        color: $white;
+    }
+    &__nav {
+        ul {
+            list-style: none;
+            li {
+                a {
+                    color: $white;
+                }
+            }
+        }
+    }
+}

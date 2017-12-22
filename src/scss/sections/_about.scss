@@ -1,0 +1,8 @@
+.logos {
+    display: flex;
+    margin: 0 -$gutter;
+    padding: $gutter 0;
+    &__logo {
+        padding: 0 $gutter / 2;
+    }
+}

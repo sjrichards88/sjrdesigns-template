@@ -1,0 +1,31 @@
+.landing {
+    height: 100vh;
+    position: relative;
+    &:before, &:after {
+        content: '';
+        height: 100%;
+        width: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $black-blue;
+    }
+    &:after {
+        left: 50%;
+        background-color: $black;
+    }
+    &__content {
+        position: relative;
+        z-index: 1;
+        h1 {
+            color: $brand-blue;
+        }
+        h2 {
+            color: $white;
+        }
+    }
+}
+
+.scroll-mouse {
+
+}
