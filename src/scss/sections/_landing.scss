@@ -23,9 +23,13 @@
         z-index: 1;
         h1 {
             color: $brand-blue;
-        }
+            margin-bottom: 0;
+            font-size: $h1-font-size;
+        } 
         h2 {
             color: $white;
+            text-align: right;
+            margin-top: .5rem;
         }
     }
 }
