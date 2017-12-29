@@ -15,7 +15,11 @@
         background-color: $black;
     }
     &__content {
-        position: relative;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
         z-index: 1;
         h1 {
             color: $brand-blue;
