@@ -1,8 +1,62 @@
-.logos {
-    display: flex;
-    margin: 0 -$gutter;
-    padding: $gutter 0;
-    &__logo {
-        padding: 0 $gutter / 2;
-    }
+.about {
+	position: relative;
+	&:before {
+		@media (min-width: $screen-sm) {
+			content: '';
+			width: 90%;
+			height: 70%;
+			position: absolute;
+			z-index: 1;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			background-color: $grey-light;
+		}
+	}
+	&__content {
+		padding: $gutter;
+		z-index: 2;
+		position: relative;
+		background-color: $white;
+		display: block;
+		max-width: $screen-lg;
+		margin: 0 auto;
+		box-shadow: 0px 0px 29px 3px rgba(0, 0 ,0, .15);
+		@media (min-width: $screen-sm) {
+			padding: $gutter * 2;		
+		}
+	}
+	&__copy {
+		text-align: center;
+		font-size: 16px;
+		line-height: 1.6;
+		width: 100%;
+		max-width: 650px;
+		margin: 0 auto;
+		padding-bottom: $gutter;
+		@media (min-width: $screen-sm) {
+			font-size: 18px;
+		}
+	}
+	&__companies {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		text-align: center;
+		z-index: 2;
+		position: relative;
+		li {
+			display: inline-block;
+			padding: $gutter / 1.5;
+			width: 33.3%;
+			padding: 10px;
+			@media (min-width: $screen-sm) {
+				width: auto;
+				padding: $gutter / 1.5;
+			}
+			img {
+				height: 35px;
+			}
+		}
+	}
 }

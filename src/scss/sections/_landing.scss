@@ -1,6 +1,8 @@
 .landing {
     height: 100vh;
     position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
     &:before, &:after {
         content: '';
         height: 100%;
@@ -8,29 +10,90 @@
         position: absolute;
         top: 0;
         left: 0;
-        background-color: $black-blue;
+        background-color: $black;
+        transform: translateX(-100%); 
+        animation-delay: .2s;
+        animation: slide .5s forwards;
+        animation-timing-function: ease-in-out;
+        z-index: 2;
+        overflow: hidden;
     }
     &:after {
         left: 50%;
         background-color: $black;
+        animation-delay: 1.3s;
+        animation: slide 1.2s forwards;
+        transform: translateX(-200%);
+        z-index: 1;
+    }
+    &__triangles {
+        position: absolute;
+        top: -10%;
+        left: -10%;
+        width: 120%;
+        height: 120%;
+        z-index: 3;
+        opacity: .1;
+        // tocahnge
+        // background: linear-gradient(to bottom right, #ff0055 , #220055);
+        background-color: $black-blue;
+        svg {
+            path {
+                opacity: 1;
+                transition: all .4s;
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
     }
     &__content {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
         text-align: center;
-        z-index: 1;
+        z-index: 4;
+        opacity: 0;
+        transform: translate(-50%, -40%);
+        animation: opacity-slide .5s forwards;
+        animation-delay: 1s;
+        width: 100%;
+        @media (min-width: $screen-sm) {
+            width: auto;
+        }
         h1 {
             color: $brand-blue;
             margin-bottom: 0;
-            font-size: $h1-font-size;
+            font-size: $h2-font-size;
+            font-weight: $font-weight-bold;
+            text-align: center;
+            @media (min-width: $screen-sm) {
+                text-align: left;
+                font-size: $h1-font-size * 1.2;
+            }
         } 
         h2 {
             color: $white;
-            text-align: right;
             margin-top: .5rem;
+            font-size: $h3-font-size;
+            font-weight: $font-weight-semi-bold;
+            text-align: center;
+            @media (min-width: $screen-sm) {
+                text-align: right;
+                font-size: $h2-font-size;
+            }
         }
+    }
+}
+
+@keyframes slide {
+    100% { transform: translateX(0); }
+}
+
+@keyframes opacity-slide {
+    100% {
+        transform: translate(-50%, -50%);
+        opacity: 1; 
     }
 }
 

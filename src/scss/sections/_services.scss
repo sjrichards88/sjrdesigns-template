@@ -1,0 +1,14 @@
+.services {
+    @media (min-width: $screen-sm) {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+    &__service {
+        width: 100%;
+        text-align: center;
+        @media (min-width: $screen-sm) {
+            width: 33.3%;
+        }
+    }
+}

@@ -5,6 +5,10 @@
 } 
 
 .section {
-    display: inline-block;
-    width: 100%;
+    display: block;
+    padding: $gutter * 2 $gutter;
+    overflow: hidden;
+    h1, h2 {
+        margin-top: 0;
+    }
 }

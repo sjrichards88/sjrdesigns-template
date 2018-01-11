@@ -2,20 +2,34 @@
 $container-max-width: 1366px;
 $gutter: 30px;
 
+$screen-lg: 1200px;
+$screen-md: 920px;
+$screen-sm: 768px;
+$screen-xs: 320px;
+
 // Colours
 $black: #000;
 $white: #fff;
 $brand-blue: #67fff2;
 $black-blue: #10131a;
+$grey-light: #eee;
 
 // Font related  
 $font-weight-bold: 700;
 $font-weight-semi-bold: 600;
 $font-weight-medium: 500;
-$font-weight-regular: 500;
+$font-weight-regular: 400;
+
+$default-font-family: 'Lato', sans-serif;
+$default-font-weight: $font-weight-regular;
+$default-font-color: #2b2a2a;
 
 $heading-font-family: 'Poppins', sans-serif;
-$heading-font-weight: $font-weight-semi-bold;
+$heading-font-weight: $font-weight-medium;
 
 $font-size-base: 1rem;
 $h1-font-size: $font-size-base * 3;
+$h2-font-size: $font-size-base * 2.5;
+$h3-font-size: $font-size-base * 2;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;

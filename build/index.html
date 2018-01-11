@@ -10,13 +10,18 @@
 	<meta name="keywords" content="Web Development, Web Design, Simon Richards, London Web Design, portfolio, cheap websites, website building"/>
 	<meta name="author" content="Simon Richards">
 
-	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700|Lato" rel="stylesheet">
 	<link href="./assets/css/main.min.css" rel="stylesheet">
 </head>
 <body>
 
 	<header class="header">
-		<a href="#landing" class="header__logo">simon richards</a>
+		<div class="header__logo">
+			<a href="#landing">simon richards</a>
+		</div>
+		<div class="header__nav-toggle">
+			<div class="burger">MENU</div>
+		</div>
 		<nav class="header__nav">
 			<ul>
 				<li>
@@ -35,38 +40,93 @@
 		</nav>
 	</header>
 
-	<section class="section landing" id="landing">
+	<div class="content-wrap">
 
-		<div class="landing__slides"></div>
+		<section class="section landing" id="landing">
 
-		<div class="landing__content">
-			<h1>Simon Richards</h1>
-			<h2>Web Developer</h2>
+			<div id="landing-triangles" class="landing__triangles"></div>
+
+			<div class="landing__content">
+				<h1>Simon Richards</h1>
+				<h2>Web Developer</h2>
+			</div>
+
 			<div class="scroll-mouse"></div>
-		</div>
 
-	</section>
+		</section>
 
-	<section class="section section--about">
+		<section class="section about">
 
-	</section>
+			<div class="about__content">
 
-	<section class="section section--services">
+				<div class="about__copy">
+					
+					<h2>about</h2>
 
-	</section>
+					<p>Hello, I am Simon Richards, a web designer and developer based in London. I graduated in Multimedia Computing at Plymouth University and have been employed as a web developer for 5 years.</p> 
 
-	<section class="section section--work">
+					<p>I am currently looking for additional freelance work and small projects to help me expand my portfolio. I have a passion to create simple effective looking websites and to bring them to life by adding dynamic features.</p>
 
-	</section>
+					<p>Some companies I’ve worked with...</p>
 
-	<section class="section section--contact">
+				</div>
 
-	</section>
+				<ul class="about__companies">
+					<li><img src="assets/images/logo-abba.svg" alt="ABBA"></li>
+					<li><img src="assets/images/logo-barclays.svg" alt="Barclays"></li>
+					<li><img src="assets/images/logo-bbc.svg" alt="BBC"></li>
+					<li><img src="assets/images/logo-disney.svg" alt="Disney"></li>
+					<li><img src="assets/images/logo-ubisoft.svg" alt="Ubisoft"></li>
+				</ul>
+			
+			</div>
 
-	<footer>
 
 
-	</footer>
+		</section>
+
+		<section class="section services">
+
+			<div class="services__service">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa praesentium consequuntur atque eligendi animi at.</p>
+			</div>
+
+			<div class="services__service">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa praesentium consequuntur atque eligendi animi at.</p>
+			</div>
+
+			<div class="services__service">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa praesentium consequuntur atque eligendi animi at.</p>
+			</div>
+
+			<div class="services__service">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa praesentium consequuntur atque eligendi animi at.</p>
+			</div>
+
+			<div class="services__service">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa praesentium consequuntur atque eligendi animi at.</p>
+			</div>
+
+			<div class="services__service">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa praesentium consequuntur atque eligendi animi at.</p>
+			</div>
+
+		</section>
+
+		<section class="section work">
+
+		</section>
+
+		<section class="section contact">
+
+		</section>
+
+		<footer>
+
+
+		</footer>
+
+	</div>
 
 	<script src="./assets/js/main.min.js"></script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
