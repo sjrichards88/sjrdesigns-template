@@ -1,14 +1,36 @@
 .services {
-    @media (min-width: $screen-sm) {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: stretch;
+    h2 {
+        text-align: center;
+        padding-bottom: $gutter * 2;
+    }
+    &__wrap {
+        max-width: $container-max-width;
+        margin: 0 auto;
+        @media (min-width: $screen-sm) {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+        }
     }
     &__service {
         width: 100%;
         text-align: center;
+        padding-bottom: $gutter;
         @media (min-width: $screen-sm) {
+            width: 50%;
+        }
+        @media (min-width: $screen-md) {
             width: 33.3%;
+        }
+        .fa {
+            font-size: $h1-font-size * 2;
+            color: $grey-light-dark
+        }
+        &-content {
+            padding: 0 $gutter / 2;
+            @media (min-width: $screen-xs) {
+                padding: 0 $gutter;
+            }
         }
     }
 }
