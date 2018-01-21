@@ -6,7 +6,7 @@
     &:before, &:after {
         content: '';
         height: 100%;
-        width: 50%;
+        width: 100%;
         position: absolute;
         top: 0;
         left: 0;
@@ -17,15 +17,16 @@
         animation-timing-function: ease-in-out;
         z-index: 2;
         overflow: hidden;
+        display: block;
     }
-    &:after {
-        left: 50%;
-        background-color: $black;
-        animation-delay: 1.3s;
-        animation: slide 1.2s forwards;
-        transform: translateX(-200%);
-        z-index: 1;
-    }
+    // &:after {
+    //     left: 50%;
+    //     background-color: $black;
+    //     animation-delay: 1.3s;
+    //     animation: slide 1.2s forwards;
+    //     transform: translateX(-200%);
+    //     z-index: 1;
+    // }
     &__triangles {
         position: absolute;
         top: -10%;
@@ -67,8 +68,13 @@
             font-size: $h2-font-size;
             font-weight: $font-weight-bold;
             text-align: center;
+            padding: 0 $gutter / 2;
             @media (min-width: $screen-sm) {
                 text-align: left;
+                font-size: $h1-font-size * 0.9;
+                padding: 0;
+            }
+            @media (min-width: $screen-md) {
                 font-size: $h1-font-size * 1.2;
             }
         } 
@@ -78,8 +84,13 @@
             font-size: $h3-font-size;
             font-weight: $font-weight-semi-bold;
             text-align: center;
+            padding: 0 $gutter / 2;
             @media (min-width: $screen-sm) {
                 text-align: right;
+                font-size: $h2-font-size * 0.9;
+                padding: 0;
+            }
+            @media (min-width: $screen-md) {
                 font-size: $h2-font-size;
             }
         }
@@ -98,5 +109,44 @@
 }
 
 .scroll-mouse {
+    position: absolute;
+    bottom: $gutter;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid $white;
+    border-radius: 10px;
+    height: 35px;
+    width: 20px;
+    z-index: 20;
+    &:after {
+        content: "";
+        height: 4px;
+        width: 4px;
+        border-radius: 50%;
+        background-color: $white;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 20%;
+        animation: scroll-mouse;
+        animation-iteration-count: infinite;
+        animation-duration: 1s;
+    }
+}
 
+@keyframes scroll-mouse {
+    0% {
+        transform: translate(-50%, 0);
+        opacity: 1;
+    }
+    50% {
+        transform: translate(-50%, 300%);
+        opacity: 1;
+    }
+    65% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
 }

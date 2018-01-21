@@ -34,6 +34,9 @@
 		max-width: 650px;
 		margin: 0 auto;
 		padding-bottom: $gutter;
+		h2 {
+			padding-bottom: $gutter;
+		}
 		@media (min-width: $screen-sm) {
 			font-size: 18px;
 		}

@@ -5,15 +5,22 @@
     left: 0;
     z-index: 10;
     transition: all .4s;
+    height: 80px;
     &.active {
         transform: translateX(-60%);
+        @media (min-width: $screen-sm) {
+            transform: none;
+        }
     }
     &__logo {
         position: absolute;
         left: 0;
         top: 0;
-        margin: $gutter;
+        margin: $gutter / 2;
         overflow: hidden;
+        @media (min-width: $screen-xsm) {
+            margin: $gutter;
+        }
         a {
             color: $white;
             font-family: $heading-font-family;
@@ -45,8 +52,8 @@
         .burger {
             cursor: pointer;
             position: absolute;
-            right: $gutter;
-            top: $gutter;
+            right: $gutter / 2;
+            top: $gutter / 2;
             width: 35px;
             margin-top: 9px;
             color: $white;
@@ -55,6 +62,10 @@
             line-height: 1;
             text-align: center;
             z-index: 10;
+            @media (min-width: $screen-xsm) {
+                margin: $gutter;
+                right: $gutter;
+            }
             &:after,
             &:before {
                 content: '';
@@ -75,12 +86,21 @@
         position: fixed;
         right: 0;
         top: 0;
-        padding-top: $gutter / 2;
+        padding-top: $gutter / 4;
         transform: translateX(100%);
+        width: 60%;
+        height: 100vh;
+        background-color: $brand-blue;
+        @media (min-width: $screen-xsm) {
+            padding-top: $gutter / 2;
+        }
         @media (min-width: $screen-sm) {
             margin: $gutter;
             padding: 0;
             transform: none;
+            width: auto;
+            height: auto;
+            background-color: transparent;
         }
         ul {
             padding: 0;
@@ -106,9 +126,14 @@
                     line-height: 1;
                     font-family: $heading-font-family;
                     font-size: $h5-font-size;
-                    color: $black-blue;
+                    font-weight: $font-weight-bold;
+                    color: $white;
+                    transition: $transition-base;
+                    display: inline-block;
+                    overflow: hidden;
                     @media (min-width: $screen-sm) {
                         color: $white;
+                        font-weight: $font-weight-regular;
                     }
                     &:after {
                         content: '';
@@ -122,11 +147,33 @@
                         transform: translateX(-101%) translateY(-50%);
                         transition: all 0.3s;
                     }
-                    &:hover {
+                    &:hover, &.active {
                         &:after {
                             transform: translateX(0) translateY(-50%);
                         }
                     }
+                }
+            }
+        }
+    }
+    &--white {
+        background-color: rgba($white, .8);
+        a, ul li a {
+            @media (min-width: $screen-sm) {
+                color: $black-blue;
+            }
+            &:after {
+                @media (min-width: $screen-sm) {
+                    background-color: $black-blue;
+                }
+            }
+        }
+        .header__nav-toggle {
+            .burger {
+                color: $black-blue;
+                &:after,
+                &:before {
+                    background-color: $black-blue;
                 }
             }
         }

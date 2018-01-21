@@ -10,7 +10,7 @@
 	<meta name="keywords" content="Web Development, Web Design, Simon Richards, London Web Design, portfolio, cheap websites, website building"/>
 	<meta name="author" content="Simon Richards">
 
-	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700|Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700|Lato:400,700" rel="stylesheet">
 	<link href="./assets/css/main.min.css" rel="stylesheet">
 </head>
 <body>
@@ -25,16 +25,16 @@
 		<nav class="header__nav">
 			<ul>
 				<li>
-					<a href="#">about</a>
+					<a href="#about">about</a>
 				</li>
 				<li>
-					<a href="#">services</a>
+					<a href="#services">services</a>
 				</li>
 				<li>
-					<a href="#">work</a>
+					<a href="#work">work</a>
 				</li>
 				<li>
-					<a href="#">contact</a>
+					<a href="#contact">contact</a>
 				</li>
 			</ul>
 		</nav>
@@ -51,11 +51,11 @@
 				<h2>Web Developer</h2>
 			</div>
 
-			<div class="scroll-mouse"></div>
+			<a href="#about" class="scroll-mouse"></a>
 
 		</section>
 
-		<section class="section about">
+		<section class="section about" id="about">
 
 			<div class="about__content">
 
@@ -63,11 +63,13 @@
 					
 					<h2>about</h2>
 
-					<p>Hello, I am Simon Richards, a web designer and developer based in London. I graduated in Multimedia Computing at Plymouth University and have been employed as a web developer for 5 years.</p> 
+					<p>Hello, I am Simon Richards, a web developer and designer based in London. I graduated in Multimedia Computing at Plymouth University and have been employed as a web developer for 5+ years.</p> 
 
-					<p>I am currently looking for additional freelance work and small projects to help me expand my portfolio. I have a passion to create simple effective looking websites and to bring them to life by adding dynamic features.</p>
+					<p>I currently work at <a href="//www.dewynters.com" target="_blank" rel="noreferrer">Dewynters</a> as a senior web developer.</p>
+						
+					<p>I am available for freelance work for small to medium sized projects. <a href="#contact" class="scroll-to">Contact me</a>  if you are interested.</p>
 
-					<p>Some companies I’ve worked with...</p>
+					<p>Some companies that I’ve been lucky to work with...</p>
 
 				</div>
 
@@ -83,7 +85,7 @@
 
 		</section>
 
-		<section class="section services">
+		<section class="section services" id="services">
 
 			<h2>Services</h2>
 
@@ -91,49 +93,51 @@
 
 				<div class="services__service">
 					<div class="services__service-content">
-						<i class="fa fa-code" aria-hidden="true"></i>
+						<i class="icon icon-code" aria-hidden="true"></i>
 						<h4>Front / Back End Development</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa praesentium consequuntur atque eligendi animi at.</p>
+						<p>I code using clean semantic HTML5, CSS3/Sass, JavaScript and PHP. I also use libraries such as jQuery and React and tools such as Gulp and Webpack.</p>
+						<p>All my code is w3c compliant and testing across multiple browsers and devices.</p>
 					</div>
 				</div>
 				
 				<div class="services__service">
 					<div class="services__service-content">
-						<i class="fa fa-cogs" aria-hidden="true"></i>
+						<i class="icon icon-cogs" aria-hidden="true"></i>
 						<h4>Content Management Systems</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa praesentium consequuntur atque eligendi animi at.</p>
+						<p>I have experience using a vast range of content management systems, some off the shelf (WordPress, MODX, ExpressionEngine, Grav, Contentful), but also bespoke systems using PHP frameworks (Laravel, Codeigniter, PHP-MVC).</p>
 					</div>
 				</div>
 				
 				<div class="services__service">
 					<div class="services__service-content">
-						<i class="fa fa-wordpress" aria-hidden="true"></i>
+						<i class="icon icon-wordpress" aria-hidden="true"></i>
 						<h4>Wordpress Development</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa praesentium consequuntur atque eligendi animi at.</p>
+						<p>I specialise in crafting custom Wordpress themes from the ground up to tailor your needs, I also make sure they follow security best practices and optimise them for delivery and SEO.</p>
+						<p>Every website I create is responsive as standard, working across mobiles, tablets and desktops.</p>
 					</div>
 				</div>
 				
 				<div class="services__service">
 					<div class="services__service-content">
-						<i class="fa fa-envelope-o" aria-hidden="true"></i>
+						<i class="icon icon-envelope-o" aria-hidden="true"></i>
 						<h4>Responsive Email</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa praesentium consequuntur atque eligendi animi at.</p>
+						<p>Do you need to reach out to your clientele? I can create responsive emails for Campaign Monitor, Mailchimp or provide them as static HTML, these emails are tested in multiple email clients to ensure optimal delivery.</p>
 					</div>
 				</div>
 				
 				<div class="services__service">
 					<div class="services__service-content">
-						<i class="fa fa-server" aria-hidden="true"></i>
+						<i class="icon icon-server" aria-hidden="true"></i>
 						<h4>Hosting</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa praesentium consequuntur atque eligendi animi at.</p>
+						<p>As well as crafting your website I can provide the best hosting solution to ensure a fast, secure and reliable delivery.</p>
 					</div>
 				</div>
 				
 				<div class="services__service">
 					<div class="services__service-content">
-						<i class="fa fa-wrench" aria-hidden="true"></i>
+						<i class="icon icon-wrench" aria-hidden="true"></i>
 						<h4>Maintenance and Support</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa praesentium consequuntur atque eligendi animi at.</p>
+						<p>Whether its an upgrade, a backup or a website fix, I'm sure I can help you out.</p>
 					</div>
 				</div>
 
@@ -141,15 +145,179 @@
 
 		</section>
 
-		<section class="section work">
+		<section class="section work" id="work">
+
+			<h2>work</h2>
+
+			<div class="work__wrap">
+				<a href="https://kingtutexhibition.com/" class="work__block" target="_blank" rel="noreferrer">
+					<img src="assets/images/king-tut.jpg" class="work__block-image" alt="King Tut Exhibition website" />
+					<div class="work__block-content">
+						<h3>King Tut Exhibition</h3>
+						<span class="work__block-smallprint">developed at Dewynters</span>						
+						<div class="work__block-icon">
+							<i class="icon icon-forward" aria-hidden="true"></i>
+						</div>
+					</div>
+				</a>
+				
+				<a href="https://justdancelive.com/" class="work__block" target="_blank" rel="noreferrer">
+					<img src="assets/images/just-dance-live.jpg" class="work__block-image" alt="King Tut Exhibition website" />
+					<div class="work__block-content">
+						<h3>Just Dance Live</h3>
+						<span class="work__block-smallprint">developed at Dewynters</span>
+						<div class="work__block-icon">
+							<i class="icon icon-forward" aria-hidden="true"></i>
+						</div>
+					</div>
+				</a>
+				
+				<a href="https://abbathemuseum.com/" class="work__block" target="_blank" rel="noreferrer">
+					<img src="assets/images/abba.jpg" class="work__block-image" alt="King Tut Exhibition website" />
+					<div class="work__block-content">
+						<h3>Abba The Museum</h3>
+						<span class="work__block-smallprint">developed at Dewynters</span>
+						<div class="work__block-icon">
+							<i class="icon icon-forward" aria-hidden="true"></i>
+						</div>
+					</div>
+				</a>
+				
+				<a href="https://mammamiatheparty.com/" class="work__block" target="_blank" rel="noreferrer">
+					<img src="assets/images/mmtp.jpg" class="work__block-image" alt="King Tut Exhibition website" />
+					<div class="work__block-content">
+						<h3>Mamma Mia The Party</h3>
+						<span class="work__block-smallprint">developed at Dewynters</span>
+						<div class="work__block-icon">
+							<i class="icon icon-forward" aria-hidden="true"></i>
+						</div>
+					</div>
+				</a>
+				
+				<a href="https://www.fiveguysmusical.com/" class="work__block" target="_blank" rel="noreferrer">
+					<img src="assets/images/fgnm.jpg" class="work__block-image" alt="King Tut Exhibition website" />
+					<div class="work__block-content">
+						<h3>Five Guys Named Moe</h3>
+						<span class="work__block-smallprint">developed at Dewynters</span>
+						<div class="work__block-icon">
+							<i class="icon icon-forward" aria-hidden="true"></i>
+						</div>
+					</div>
+				</a>
+
+				<a href="https://jacc-kw.com/" class="work__block" target="_blank" rel="noreferrer">
+					<img src="assets/images/jacc.jpg" class="work__block-image" alt="King Tut Exhibition website" />
+					<div class="work__block-content">
+						<h3>Sheikh Jaber Al-Ahmad Cultural Centre</h3>
+						<span class="work__block-smallprint">developed at Dewynters</span>
+						<div class="work__block-icon">
+							<i class="icon icon-forward" aria-hidden="true"></i>
+						</div>
+					</div>
+				</a>
+
+				<a href="https://batoutofhellmusical.com/" class="work__block" target="_blank" rel="noreferrer">
+					<img src="assets/images/booh.jpg" class="work__block-image" alt="King Tut Exhibition website" />
+					<div class="work__block-content">
+						<h3>Bat Out Of Hell</h3>
+						<span class="work__block-smallprint">developed at Dewynters</span>
+						<div class="work__block-icon">
+							<i class="icon icon-forward" aria-hidden="true"></i>
+						</div>
+					</div>
+				</a>
+				
+				<a href="http://soulholidayalbum.com/" class="work__block" target="_blank" rel="noreferrer">
+					<img src="assets/images/soul.jpg" class="work__block-image" alt="King Tut Exhibition website" />
+					<div class="work__block-content">
+						<h3>Marisha Wallace Soul Holiday</h3>
+						<span class="work__block-smallprint">developed at Dewynters</span>
+						<div class="work__block-icon">
+							<i class="icon icon-forward" aria-hidden="true"></i>
+						</div>
+					</div>
+				</a>
+
+				<div class="work__block">
+					<img src="assets/images/bows.jpg" class="work__block-image" alt="King Tut Exhibition website" />
+					<div class="work__block-content">
+						<h3>Bouquets &amp; Bows</h3>
+						<span class="work__block-smallprint">coming soon</span>
+					</div>
+				</div>
+				
+			</div>
 
 		</section>
 
-		<section class="section contact">
+		<section class="section contact" id="contact">
+
+			<h2>Contact</h2>
+
+			<div class="contact__wrap">
+				<div class="contact__form">
+				
+					<form action="post" id="contact_form" class="form">
+						
+						<div class="form__group form__group--50">
+							<div class="form__input-wrap" id="name">
+								<input type="text" name="name"  placeholder="Name">
+							</div>
+							<div class="form__errors"></div>
+						</div>
+
+						<div class="form__group form__group--50 form__group--50-right">
+							<div class="form__input-wrap" id="email">
+								<input type="email" name="email" placeholder="Email">
+							</div>
+							<div class="form__errors"></div>
+						</div>
+
+						<div class="form__group">
+							<div class="form__input-wrap" id="message">
+								<textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
+							</div>
+							<div class="form__errors"></div>
+						</div>
+
+						<input type="hidden" name="random" id="random" value="">
+						<div class="form__errors"></div>
+
+						<div class="form__group">
+							<button type="submit">Send</button>
+						</div>
+						
+					</form>
+
+				</div>
+				
+				<div class="contact__info">
+
+					<div class="contact__info-block">
+						<h4>Get in Touch!</h4>
+						<p>Interesting in working with me? Need a website? <br/> Don't hesitate to drop me a line.</p>
+					</div>
+					
+					<div class="contact__info-block">
+						<i class="icon icon-envelope-o" aria-hidden="true"></i> sjrichards88@gmail.com
+					</div>
+
+					<div class="contact__info-block">
+						<i class="icon icon-phone" aria-hidden="true"></i> 07850944628
+					</div>
+
+					<div class="contact__info-block">
+						<i class="icon icon-linkedin-square" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/simon-richards-33874699/" target="_blank" rel="noreferrer">LinkedIn</a>
+					</div>
+				
+				</div>
+			</div>
+
+
 
 		</section>
 
-		<footer>
+		<footer class="section">
 
 
 		</footer>
