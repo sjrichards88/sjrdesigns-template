@@ -53,6 +53,8 @@ var core = function($) {
 		$('.header a, .scroll-mouse, .scroll-to').on('click', function(e) {
 			e.preventDefault();
 
+			loaded = 1;
+
 			var target = $(this).attr('href');
 
 			$('.content-wrap').removeClass('nav-active')
