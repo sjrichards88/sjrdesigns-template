@@ -5,7 +5,17 @@
     left: 0;
     z-index: 10;
     transition: all .4s;
-    height: 80px;
+    height: 55px;
+    @media (min-width: $screen-sm) {
+        height: 80px;
+    }
+    .header__horizontal-bar {
+        position: absolute;
+        bottom: -3px;
+        height: 3px;
+        width: 0;
+        background-color: $brand-blue;
+    }
     &.active {
         transform: translateX(-60%);
         @media (min-width: $screen-sm) {
@@ -157,7 +167,7 @@
         }
     }
     &--white {
-        background-color: rgba($white, .8);
+        background-color: rgba($white, .85);
         a, ul li a {
             @media (min-width: $screen-sm) {
                 color: $black-blue;
@@ -166,6 +176,11 @@
                 @media (min-width: $screen-sm) {
                     background-color: $black-blue;
                 }
+            }
+        }
+        .header__logo {
+            a {
+                color: $black-blue;
             }
         }
         .header__nav-toggle {
