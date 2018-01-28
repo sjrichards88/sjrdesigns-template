@@ -17,6 +17,7 @@ img {
 }
 
 a {
-    color: $soft-red;
+    color: darken($brand-blue, 25%);
     text-decoration: none;
+    font-weight: $font-weight-bold;
 }

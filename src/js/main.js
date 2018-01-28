@@ -15,7 +15,7 @@ var core = function($) {
 			headerContainer = document.getElementById('landing-triangles');
 
 		var headerMapColorRender = function (path) {
-			var random = 16;
+			var random = 100;
 			var ratio = (path.x + path.y) / (path.cols + path.lines);
 			var code = Math.floor(255 - (ratio * (255-random)) - Math.random()*random).toString(16);
 			return '#'+code+code+code;
@@ -120,7 +120,7 @@ var core = function($) {
 					landingHeight = landing.height(),
 					windowOffset = $(window).scrollTop();
 
-				if (windowOffset < landingHeight) {
+				if ( windowOffset < landingHeight && $(window).width() > 768 ) {
 					$('html, body').animate({
 						scrollTop: $('#about').offset().top
 					}, 600);
